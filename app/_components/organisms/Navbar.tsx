@@ -7,8 +7,8 @@ import Avatar from "@/public/img/man.png";
 
 const Navbar = () => {
     return (
-        <>
-            <div className={ styles.navbarDesktop }>
+        <header>
+            <nav className={ styles.navbarDesktop }>
                 <div className={ styles.firstSection }>
                     <h1>S.</h1>
                     <div className={ styles.circleMessage }><FaMessage /></div>
@@ -29,8 +29,8 @@ const Navbar = () => {
                         <FaSignOutAlt />
                     </div>
                 </div>
-            </div>
-            <div className={ styles.navbarMobile }>
+            </nav>
+            <nav className={ styles.navbarMobile }>
                 <h1>S.</h1>
 
                 <div className={ styles.secondSectionMobile }>
@@ -45,8 +45,8 @@ const Navbar = () => {
                 <div>
                     <Image className={ styles.avatar } src={ Avatar } alt='logo' width={ 40 } height={ 40 } />
                 </div>
-            </div>
-        </>
+            </nav>
+        </header>
     );
 };
 

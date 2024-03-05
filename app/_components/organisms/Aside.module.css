@@ -1,0 +1,129 @@
+.sideContent {
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    color: black;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    z-index: 10;
+    padding: 5px 30px;
+}
+
+.sideContent h3 {
+    font-size: large;
+    font-weight: 400;
+}
+
+.cardExpensesIncome,
+.cardLatestSpending,
+.cardPremium {
+    border: 3px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.detailExpenseIncome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detailExpense,
+.detailIncome {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.widthBar {
+    display: flex;
+    gap: 5px;
+}
+
+.width70 {
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.width30 {
+    background-color: var(--third-color);
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.fontMedium {
+    font-size: medium;
+}
+
+.fontLarge {
+    font-size: x-large;
+}
+
+.textMuted {
+    color: gray;
+    font-size: small;
+}
+
+.titleLatest {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titlePremium {
+    display: flex;
+    justify-content: center;
+}
+
+.dataLatest {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.viewAll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: small;
+    color: var(--primary-color);
+    background-color: transparent;
+    border: none;
+}
+
+.buttonGetNow {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .sideContent {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1367px) {
+
+    .cardExpensesIncome,
+    .cardLatestSpending,
+    .cardPremium {
+        padding: 50px;
+    }
+}

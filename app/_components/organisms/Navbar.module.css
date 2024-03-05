@@ -36,7 +36,7 @@
 
 .circleSignOut {
     border-radius: 100%;
-    background-color: #F7F6FF;
+    background-color: var(--secondary-color);
     padding: 10px;
     height: 40px;
     width: 40px;
@@ -51,7 +51,7 @@
     justify-items: center;
     align-items: center;
     padding: 10px;
-    background-color: #F7F6FF;
+    background-color: var(--secondary-color);
     gap: 2rem;
     border-radius: 20px;
     margin: 0 auto;
@@ -66,7 +66,7 @@
 }
 
 .avatar {
-    border: 2px #F7F6FF solid;
+    border: 2px var(--secondary-color) solid;
     border-radius: 100%;
     margin-bottom: -5px;
     z-index: 1
@@ -99,7 +99,7 @@
     .secondSectionMobile {
         display: flex;
         padding: 10px;
-        background-color: #F7F6FF;
+        background-color: var(--secondary-color);
         border-radius: 20px;
         gap: 20px;
     }
@@ -109,10 +109,8 @@
     }
 }
 
-/* Media Query for Responsive Navbar */
 @media screen and (min-width: 1367px) {
     .secondSection {
         padding: 20px;
     }
-
 }

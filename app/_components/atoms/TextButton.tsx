@@ -1,13 +1,13 @@
 import React, { ReactNode } from 'react';
 
-interface IButton {
+interface ITextButton {
   children: ReactNode;
   onClick?: () => void;
   className: string;
 }
 
-const Button = ({ children, onClick, className }: IButton) => {
+const TextButton = ({ children, onClick, className }: ITextButton) => {
   return <button className={ className } onClick={ onClick }>{ children }</button>;
 };
 
-export default Button;
+export default TextButton;
