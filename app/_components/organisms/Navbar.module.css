@@ -1,0 +1,86 @@
+.navbar {
+    height: 100%;
+    width: 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    color: black;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar h1 {
+    font-size: 40px;
+}
+
+.firstSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px
+}
+
+.circleMessage {
+    border-radius: 100%;
+    background-color: #FFDFBB;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circleSignOut {
+    border-radius: 100%;
+    background-color: #F7F6FF;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondSection {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #F7F6FF;
+    gap: 2rem;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+
+.thirdSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.avatar {
+    border: 2px #F7F6FF solid;
+    border-radius: 100%;
+    margin-bottom: -5px;
+    z-index: 1
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+}
+
+/* Media Query for Responsive Navbar */
+@media screen and (min-width: 1367px) {
+    .secondSection {
+        padding: 20px;
+    }
+}

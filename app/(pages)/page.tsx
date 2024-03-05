@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Header from "../_components/organisms/Header";
 import DashboardLayout from "../_components/templates/DashboardLayout";
 
 export default function Home() {
