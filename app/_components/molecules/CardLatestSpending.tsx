@@ -1,25 +1,16 @@
 "use client";
 
-import React, { useState } from 'react';
+import React from 'react';
 import styles from "../organisms/Aside.module.css";
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import { latestSpendingData } from '@/constants';
 import TextButton from '../atoms/TextButton';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa6';
 import Image from 'next/image';
+import useLatestSpending from '../hooks/useLatestSpending';
 
 const CardLatestSpending = () => {
-    const [ isViewAll, setIsViewAll ] = useState<boolean>(false);
-
-    const handleButtonClick = () => {
-        if (isViewAll)
-        {
-            setIsViewAll(false);
-        } else
-        {
-            setIsViewAll(true);
-        }
-    };
+    const { isViewAll, handleButtonClick } = useLatestSpending();
 
     return (
         <div className={ styles.cardLatestSpending }>

@@ -1,31 +1,15 @@
 "use client";
 
-import React, { useState } from 'react';
+import React from 'react';
 import styles from "../organisms/MainContent.module.css";
-import { Avatar, messageList } from '@/constants';
 import ChatMessage from '../atoms/ChatMessage';
 import { FaRegSmile } from 'react-icons/fa';
 import { FaPaperclip } from 'react-icons/fa6';
 import Button from '../atoms/Button';
+import useChat from '../hooks/useChat';
 
 const CardChat = () => {
-    const [ messages, setMessages ] = useState(messageList);
-    const [ newMessageText, setNewMessageText ] = useState('');
-
-    const handleSendMessage = () => {
-        if (newMessageText.trim() !== '')
-        {
-            const newMessage = {
-                id: messages.length + 1,
-                message: newMessageText.trim(),
-                img: Avatar,
-                type: 'sender',
-            };
-
-            setMessages([ ...messages, newMessage ]);
-            setNewMessageText('');
-        }
-    };
+    const { messages, newMessageText, setNewMessageText, handleSendMessage } = useChat();
 
     return (
         <div className={ styles.cardChat }>

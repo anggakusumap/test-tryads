@@ -1,29 +1,12 @@
 "use client";
 
-import React, { useState } from 'react';
+import React from 'react';
 import styles from "../organisms/MainContent.module.css";
-import { transactionList } from '@/constants';
 import TransactionList from '../atoms/TransactionList';
+import useTransactions from '../hooks/useTransactions';
 
 const CardTransactions = () => {
-    const [ transactions, setTransactions ] = useState(transactionList);
-    const [ isNew, setIsNew ] = useState(true);
-
-    const orderByNewest = () => {
-        const sortedTransactions = [ ...transactions ].sort((a, b) => {
-            return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
-        });
-        setTransactions(sortedTransactions);
-        setIsNew(true);
-    };
-
-    const orderByLowest = () => {
-        const sortedTransactions = [ ...transactions ].sort((a, b) => {
-            return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime();
-        });
-        setTransactions(sortedTransactions);
-        setIsNew(false);
-    };
+    const { isNew, orderByNewest, orderByLowest, transactions, } = useTransactions();
 
     return (
         <div className={ styles.cardTransactions }>
