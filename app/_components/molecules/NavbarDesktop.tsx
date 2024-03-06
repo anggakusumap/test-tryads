@@ -8,28 +8,32 @@ import { Avatar } from '@/constants';
 
 const NavbarDesktop = () => {
     return (
-        <nav className={ styles.navbarDesktop }>
-            <div className={ styles.firstSection }>
-                <h1>S.</h1>
-                <div className={ styles.circleMessage }><FaMessage /></div>
+        <>
+            <div className={ styles.widthTemp }>
             </div>
-
-            <div className={ styles.secondSection }>
-                <FaHome />
-                <FaBell />
-                <FaClock />
-                <FaUsers />
-                <FaWallet />
-                <FaGear />
-            </div>
-
-            <div className={ styles.thirdSection }>
-                <Image className={ styles.avatar } src={ Avatar } alt='logo' width={ 40 } height={ 40 } />
-                <div className={ styles.circleSignOut }>
-                    <FaSignOutAlt />
+            <nav className={ styles.navbarDesktop }>
+                <div className={ styles.firstSection }>
+                    <h1>S.</h1>
+                    <div className={ styles.circleMessage }><FaMessage /></div>
                 </div>
-            </div>
-        </nav>
+
+                <div className={ styles.secondSection }>
+                    <FaHome />
+                    <FaBell />
+                    <FaClock />
+                    <FaUsers />
+                    <FaWallet />
+                    <FaGear />
+                </div>
+
+                <div className={ styles.thirdSection }>
+                    <Image className={ styles.avatar } src={ Avatar } alt='logo' width={ 40 } height={ 40 } />
+                    <div className={ styles.circleSignOut }>
+                        <FaSignOutAlt />
+                    </div>
+                </div>
+            </nav>
+        </>
     );
 };
 

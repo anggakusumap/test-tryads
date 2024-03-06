@@ -47,9 +47,52 @@
     font-size: small;
 }
 
+.cardTransactions {
+    border: 3px solid var(--border-color);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 20px;
+    width: 65%;
+    font-size: small;
+}
+
+.cardAnalytics {
+    border: 3px solid var(--border-color);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 20px;
+    width: 35%;
+    font-size: small;
+}
+
+.cardAnalyticsTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
 .cardBalanceTitle {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.cardTransactionsTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.cardTransactionsTitle>div {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -102,7 +145,9 @@
     align-items: center;
 }
 
-.mainBalanceVisa {
+.mainBalanceVisa,
+.mainBuyChat,
+.mainTransactionsAnalytics {
     display: flex;
     gap: 20px;
 }
@@ -168,6 +213,7 @@
     gap: 20px;
     width: 50%;
     padding: 10px;
+    justify-content: space-between;
     border-right: 1px solid var(--border-color);
 }
 
@@ -199,7 +245,7 @@
 
 .checkbox {
     background-color: var(--fourth-color);
-    padding: 10px;
+    padding: 20px 10px;
     display: flex;
     gap: 10px;
     align-items: center;
@@ -207,10 +253,107 @@
     justify-content: space-between;
 }
 
+.shoppingContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .addShopping {
     display: flex;
     justify-content: space-between;
 }
+
+.messageSender {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.messageReceiver {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.messageSender p {
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.messageReceiver p {
+    background-color: var(--fourth-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.chatInput {
+    background-color: var(--fourth-color);
+    padding: 10px 20px;
+}
+
+.chatContainer {
+    height: 100px;
+}
+
+.chatInput input {
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 50px;
+    background: inherit;
+}
+
+.buttonSend {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.bottomInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottomInput div {
+    display: flex;
+    gap: 5px;
+}
+
+.transactionList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.transactionList>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.transactionList>div>div>p {
+    color: gray;
+}
+
+.transactionList>div>p {
+    font-weight: 600;
+}
+
+.transactionList>div>div {
+    display: flex;
+    flex-direction: column;
+}
+
 
 @media screen and (max-width: 768px) {
     .mainContent {

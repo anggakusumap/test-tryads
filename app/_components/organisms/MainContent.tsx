@@ -2,10 +2,10 @@
 
 import React from 'react';
 import styles from './MainContent.module.css';
-import { FaArrowCircleUp, FaSearch } from 'react-icons/fa';
+import { FaArrowCircleUp, FaRegSmile, FaSearch } from 'react-icons/fa';
 import { MdKeyboardArrowRight, MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import Image from 'next/image';
-import { Avatar, Visa, shoppingListItem } from '@/constants';
+import { Avatar, Visa, messageList, shoppingListItem, transactionList } from '@/constants';
 import { faker } from '@faker-js/faker';
 import {
     Chart as ChartJS,
@@ -17,8 +17,14 @@ import {
     Legend,
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
-import { FaPlus } from 'react-icons/fa6';
+import { FaPaperclip, FaPlus } from 'react-icons/fa6';
 import Checkbox from '../atoms/Checbox';
+import ChatMessage from '../atoms/ChatMessage';
+import Button from '../atoms/Button';
+import TransactionList from '../atoms/TransactionList';
+import { BsThreeDotsVertical } from 'react-icons/bs';
+import SemiCircleDonutChart from '../atoms/SemiCircleDonutChart';
+import SemiCircle from '../atoms/SemiCircleDonutChart';
 
 ChartJS.register(
     CategoryScale,
@@ -133,25 +139,71 @@ const MainContent = () => {
                                 <p>Sat, September 12</p>
                             </div>
                         </div>
-                        <div className={ styles.addShopping }>
-                            <p>0/3 Shopping list</p>
-                            <p> <FaPlus /> Add an item</p>
-                        </div>
-                        <div className={ styles.checkboxContainer }>
-                            { shoppingListItem.map((shop) => (
-                                <Checkbox key={ shop.id } className={ styles.checkbox }>{ shop.title }</Checkbox>
-                            )) }
+                        <div className={ styles.shoppingContainer }>
+                            <div className={ styles.addShopping }>
+                                <p>0/3 Shopping list</p>
+                                <p> <FaPlus /> Add an item</p>
+                            </div>
+                            <div className={ styles.checkboxContainer }>
+                                { shoppingListItem.map((shop) => (
+                                    <Checkbox key={ shop.id } className={ styles.checkbox }>{ shop.title }</Checkbox>
+                                )) }
+                            </div>
                         </div>
                     </div>
                     <div className={ styles.cardChat }>
                         <h3>Esther Howard</h3>
+                        <div className={ styles.chatContainer }>
+                            { messageList.map((list) => (
+                                <ChatMessage
+                                    key={ list.id }
+                                    img={ list.img }
+                                    type={ list.type }
+                                    message={ list.message }
+                                    className={ list.type == 'sender' ? styles.messageSender : styles.messageReceiver } />
+                            )) }
+                        </div>
+                        <div className={ styles.chatInput }>
+                            <input type="text" name="chatInput" id="chatInput" placeholder='Type your message here' />
+                            <div className={ styles.bottomInput }>
+                                <div>
+                                    <FaRegSmile />
+                                    <FaPaperclip />
+                                </div>
+                                <Button className={ styles.buttonSend } >Send now</Button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <section className={ styles.mainTransactionsAnalytics }>
-                <div className={ styles.cardTransactions }></div>
-                <div className={ styles.cardAnalytics }></div>
+                <div className={ styles.cardTransactions }>
+                    <div className={ styles.cardTransactionsTitle }>
+                        <h3>Last Transactions</h3>
+                        <div>
+                            <p>Newest</p>
+                            <p>Lowest</p>
+                        </div>
+                    </div>
+                    <hr />
+                    { transactionList.map((list) => (
+                        <TransactionList key={ list.id }
+                            className={ styles.transactionList }
+                            img={ list.img }
+                            name={ list.name }
+                            createdAt={ list.createdAt }
+                            transaction={ list.transaction } />
+                    )) }
+                </div>
+                <div className={ styles.cardAnalytics }>
+                    <div className={ styles.cardAnalyticsTitle }>
+                        <h3>Analytics</h3>
+                        <BsThreeDotsVertical />
+                    </div>
+                    <div>
+                    </div>
+                </div>
             </section>
         </main>
     );

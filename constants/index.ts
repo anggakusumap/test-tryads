@@ -44,13 +44,37 @@ export const messageList = [
     id: 1,
     message: "Are you ready?",
     img: Avatar,
-    gender: "male",
+    type: "sender",
   },
   {
     id: 2,
     message: "I have prepared everything",
     img: Woman,
-    gender: "female",
+    type: "receiver",
+  },
+];
+
+export const transactionList = [
+  {
+    id: 1,
+    img: Avatar,
+    name: "Bessie Cooper",
+    createdAt: "02, July 2023",
+    transaction: "-$3,000",
+  },
+  {
+    id: 2,
+    img: Avatar,
+    name: "Guy Hawkins",
+    createdAt: "01, July 2023",
+    transaction: "-$1,970",
+  },
+  {
+    id: 3,
+    img: Avatar,
+    name: "Floyd Miles",
+    createdAt: "01, July 2023",
+    transaction: "-$5,000",
   },
 ];
 

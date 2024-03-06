@@ -1,19 +1,27 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import React, { ReactNode } from 'react';
-import { BsThreeDotsVertical } from 'react-icons/bs';
 
-interface ICheckbox {
-    children: ReactNode;
+interface IChatMessage {
+    message: ReactNode;
     className: string;
-    img: string;
+    img: StaticImageData;
+    type: string;
 }
 
-const ChatMessage = ({ children, img, className }: ICheckbox) => {
+const ChatMessage = ({ message, img, className, type }: IChatMessage) => {
     return (
         <div className={ className } >
-            <Image src={ img } alt='image' width={ 30 } height={ 30 } />
-            <label >{ children }</label>
-            <BsThreeDotsVertical />
+            { type === 'sender' ?
+                <>
+                    <p >{ message }</p>
+                    <Image src={ img } alt='image' width={ 30 } height={ 30 } />
+                </>
+                :
+                <>
+                    <Image src={ img } alt='image' width={ 30 } height={ 30 } />
+                    <p >{ message }</p>
+                </>
+            }
         </div>
     );
 };
