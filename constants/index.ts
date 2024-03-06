@@ -1,4 +1,5 @@
 import Avatar from "@/public/img/man.png";
+import Visa from "@/public/img/visa.png";
 
 export const latestSpendingData = [
   {
@@ -18,4 +19,4 @@ export const latestSpendingData = [
   },
 ];
 
-export { Avatar };
+export { Avatar, Visa };

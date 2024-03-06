@@ -36,13 +36,20 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    gap: 10px;
     padding: 15px;
     border-radius: 20px;
-    width: 50%;
+    width: 60%;
+    font-size: small;
 }
 
 .cardBalanceTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardBalanceContent {
+    gap: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,14 +63,38 @@
 }
 
 .cardVisa {
-    width: 50%;
+    width: 40%;
     border: 3px solid var(--border-color);
-    background-color: white;
+    background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 15px;
     border-radius: 20px;
+    color: white;
+    justify-content: space-between;
+}
+
+.cardVisaNumber div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardVisaNumber h4 {
+    font-weight: 500;
+}
+
+.cardVisaNumber {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.cardVisaTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .mainBalanceVisa {
@@ -71,9 +102,82 @@
     gap: 20px;
 }
 
+.cardBalanceFirstContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    width: 30%;
+}
+
+.cardBalanceSecondContent {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.yourTotalBalance {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.yourTotalBalance p {
+    font-size: small;
+}
+
+.yourEarnings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.yourEarnings div {
+    display: flex;
+    gap: 5px;
+    font-size: small;
+}
+
+.cardBalanceFirstContent>p {
+    color: gray;
+    font-size: x-small;
+}
+
+.cardBalanceFirstContent h1 {
+    font-size: x-large;
+}
+
 @media screen and (max-width: 768px) {
     .mainContent {
         width: 100%;
         min-height: 100vh;
+    }
+
+    .mainBalanceVisa {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cardVisa,
+    .cardBalance {
+        width: 100%;
+        min-height: 40vh;
+    }
+
+    .cardBalanceContent {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cardBalanceFirstContent,
+    .cardBalanceSecondContent {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1367px) {
+    .cardBalanceFirstContent h1 {
+        font-size: xx-large;
     }
 }
