@@ -78,14 +78,14 @@ export const transactionList = [
     id: 1,
     img: Avatar,
     name: "Bessie Cooper",
-    createdAt: "02, July 2023",
+    createdAt: "03, July 2023",
     transaction: "-$3,000",
   },
   {
     id: 2,
     img: Avatar,
     name: "Guy Hawkins",
-    createdAt: "01, July 2023",
+    createdAt: "02, July 2023",
     transaction: "-$1,970",
   },
   {

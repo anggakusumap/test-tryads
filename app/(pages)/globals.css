@@ -56,3 +56,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+hr {
+  background-color: var(--fourth-color);
+  border: none;
+  height: 3px;
+}

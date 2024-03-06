@@ -87,7 +87,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0px;
+    padding: 10px 0px 20px 0px;
+}
+
+.cardTransactionsTitle p:hover {
+    color: var(--third-color);
+    cursor: pointer;
 }
 
 .cardTransactionsTitle>div {
@@ -355,12 +360,21 @@
     background: inherit;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 .buttonSend {
     background-color: var(--primary-color);
     border: none;
     color: white;
     padding: 5px;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.buttonSend:hover {
+    background-color: var(--third-color);
 }
 
 .bottomInput {
