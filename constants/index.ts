@@ -23,6 +23,16 @@ export const latestSpendingData = [
     title: "Tickets",
     createdAt: "May 10, 2023 at 12.00 pm",
   },
+  {
+    img: Coin,
+    title: "Bioskop",
+    createdAt: "May 9, 2023 at 12.00 pm",
+  },
+  {
+    img: Coin,
+    title: "Concert",
+    createdAt: "May 8, 2023 at 12.00 pm",
+  },
 ];
 
 export const shoppingListItem = [
