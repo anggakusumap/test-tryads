@@ -5,8 +5,13 @@
     padding-top: 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     padding: 20px;
+}
+
+.mainContent h3 {
+    font-size: medium;
+    font-weight: 600;
 }
 
 .mainTop {
@@ -145,6 +150,66 @@
 
 .cardBalanceFirstContent h1 {
     font-size: x-large;
+}
+
+.cardBuyChat {
+    border: 3px solid var(--border-color);
+    background-color: white;
+    display: flex;
+    padding: 15px;
+    border-radius: 20px;
+    width: 100%;
+    font-size: small;
+}
+
+.cardBuy {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    padding: 10px;
+    border-right: 1px solid var(--border-color);
+}
+
+.cardChat {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    padding: 10px;
+    border-left: 1px solid var(--border-color);
+}
+
+.cardBuyTime {
+    display: flex;
+    gap: 10px;
+}
+
+.cardBuyTime p {
+    color: gray;
+}
+
+.checkboxContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns */
+    gap: 10px;
+    cursor: pointer;
+}
+
+.checkbox {
+    background-color: var(--fourth-color);
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.addShopping {
+    display: flex;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 768px) {

@@ -3,9 +3,9 @@
 import React from 'react';
 import styles from './MainContent.module.css';
 import { FaArrowCircleUp, FaSearch } from 'react-icons/fa';
-import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
+import { MdKeyboardArrowRight, MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import Image from 'next/image';
-import { Avatar, Visa } from '@/constants';
+import { Avatar, Visa, shoppingListItem } from '@/constants';
 import { faker } from '@faker-js/faker';
 import {
     Chart as ChartJS,
@@ -17,6 +17,8 @@ import {
     Legend,
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
+import { FaPlus } from 'react-icons/fa6';
+import Checkbox from '../atoms/Checbox';
 
 ChartJS.register(
     CategoryScale,
@@ -116,8 +118,34 @@ const MainContent = () => {
 
             <section className={ styles.mainBuyChat }>
                 <div className={ styles.cardBuyChat }>
-                    <div className={ styles.cardBuy }></div>
-                    <div className={ styles.cardChat }></div>
+                    <div className={ styles.cardBuy }>
+                        <h3>List of items to buy</h3>
+                        <div className={ styles.cardBuyTime }>
+                            <div>
+                                <h2>02:00</h2>
+                                <p>Sat, August 12</p>
+                            </div>
+                            <div>
+                                <MdKeyboardArrowRight size={ '2rem' } />
+                            </div>
+                            <div>
+                                <h2>05:00</h2>
+                                <p>Sat, September 12</p>
+                            </div>
+                        </div>
+                        <div className={ styles.addShopping }>
+                            <p>0/3 Shopping list</p>
+                            <p> <FaPlus /> Add an item</p>
+                        </div>
+                        <div className={ styles.checkboxContainer }>
+                            { shoppingListItem.map((shop) => (
+                                <Checkbox key={ shop.id } className={ styles.checkbox }>{ shop.title }</Checkbox>
+                            )) }
+                        </div>
+                    </div>
+                    <div className={ styles.cardChat }>
+                        <h3>Esther Howard</h3>
+                    </div>
                 </div>
             </section>
 
