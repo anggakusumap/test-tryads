@@ -1,6 +1,5 @@
 import React, { ReactNode } from 'react';
-import Navbar from '../organisms/Navbar';
-import Aside from '../organisms/Aside';
+import styles from "./DashboardLayout.module.css";
 
 interface DashboardLayoutProps {
     children: ReactNode;
@@ -8,11 +7,7 @@ interface DashboardLayoutProps {
 
 const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
     return (
-        <>
-            <Navbar />
-            <main>{ children }</main>
-            <Aside />
-        </>
+        <main className={ styles.dashboard }>{ children }</main>
     );
 };
 

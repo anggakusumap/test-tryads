@@ -1,0 +1,79 @@
+.mainContent {
+    width: 65%;
+    background-color: var(--secondary-color);
+    color: black;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.mainTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainPeople {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mainSearch {
+    background-color: white;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardBalance {
+    border: 3px solid var(--border-color);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 20px;
+    width: 50%;
+}
+
+.cardBalanceTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter {
+    display: flex;
+    background-color: var(--border-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cardVisa {
+    width: 50%;
+    border: 3px solid var(--border-color);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.mainBalanceVisa {
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .mainContent {
+        width: 100%;
+        min-height: 100vh;
+    }
+}

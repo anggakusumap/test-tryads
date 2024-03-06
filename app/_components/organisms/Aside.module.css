@@ -1,18 +1,12 @@
 .sideContent {
-    height: 100%;
     width: 30%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #FFFFFF;
+    background-color: white;
     color: black;
-    padding-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     gap: 10px;
-    z-index: 10;
-    padding: 5px 30px;
+    padding: 10px 20px;
 }
 
 .sideContent h3 {
@@ -115,7 +109,7 @@
 
 @media screen and (max-width: 768px) {
     .sideContent {
-        display: none;
+        width: 100%;
     }
 }
 

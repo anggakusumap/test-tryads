@@ -4,10 +4,10 @@ import NavbarMobile from '../molecules/NavbarMobile';
 
 const Navbar = () => {
     return (
-        <header>
+        <>
             <NavbarDesktop />
             <NavbarMobile />
-        </header>
+        </>
     );
 };
 
