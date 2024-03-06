@@ -1,16 +1,22 @@
 .sideContent {
-    width: 30%;
+    width: 25%;
     background-color: white;
     color: black;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     padding: 10px 20px;
+    max-height: 100vh;
 }
 
 .sideContent h3 {
-    font-size: large;
+    font-size: medium;
     font-weight: 400;
+}
+
+.sideContent h4 {
+    font-size: medium;
+    font-weight: 600;
 }
 
 .cardExpensesIncome,
@@ -22,6 +28,10 @@
     gap: 10px;
     padding: 15px;
     border-radius: 20px;
+}
+
+.cardPremium .textMuted {
+    line-height: 1.5;
 }
 
 .detailExpenseIncome {
@@ -57,7 +67,7 @@
 }
 
 .fontMedium {
-    font-size: medium;
+    font-size: 14px;
 }
 
 .fontLarge {
@@ -67,6 +77,15 @@
 .textMuted {
     color: gray;
     font-size: small;
+}
+
+.dataLatest .textMuted {
+    font-size: x-small;
+}
+
+.dataLatest .fontMedium {
+    margin-bottom: 5px;
+    font-weight: 500;
 }
 
 .titleLatest {
@@ -84,7 +103,7 @@
     display: flex;
     gap: 20px;
     align-items: center;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .viewAll {
@@ -92,7 +111,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    font-size: small;
+    font-size: 14px;
     color: var(--primary-color);
     background-color: transparent;
     border: none;
@@ -109,6 +128,8 @@
 @media screen and (max-width: 768px) {
     .sideContent {
         width: 100%;
+        padding: 20px;
+        gap: 20px;
     }
 }
 
@@ -117,6 +138,16 @@
     .cardExpensesIncome,
     .cardLatestSpending,
     .cardPremium {
-        padding: 50px;
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .sideContent {
+        gap: 40px;
+        justify-content: space-between;
+    }
+
+    .dataLatest {
+        padding-bottom: 10px;
     }
 }

@@ -1,5 +1,5 @@
 .mainContent {
-    width: 65%;
+    width: 75%;
     background-color: var(--secondary-color);
     color: black;
     padding-top: 20px;
@@ -63,6 +63,7 @@
     background-color: white;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 15px;
     border-radius: 20px;
     width: 35%;
@@ -294,10 +295,14 @@
 .chatInput {
     background-color: var(--fourth-color);
     padding: 10px 20px;
+    border-radius: 10px;
 }
 
 .chatContainer {
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 120px;
 }
 
 .chatInput input {
@@ -354,6 +359,25 @@
     flex-direction: column;
 }
 
+.doughnut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-height: 25vh;
+}
+
+.analyticsText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.doughnut p {
+    color: gray;
+}
+
 
 @media screen and (max-width: 768px) {
     .mainContent {
@@ -378,9 +402,43 @@
         width: 100%;
     }
 
+    .cardBuyChat {
+        flex-direction: column;
+    }
+
+    .chatContainer {
+        height: 150px;
+    }
+
+    .cardBuy {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .cardChat {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid var(--border-color);
+    }
+
     .cardBalanceFirstContent,
+    .cardTransactions,
+    .cardAnalytics,
     .cardBalanceSecondContent {
         width: 100%;
+    }
+
+    .mainBalanceVisa,
+    .mainBuyChat,
+    .mainTransactionsAnalytics {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .doughnut {
+        max-height: 40vh;
     }
 }
 

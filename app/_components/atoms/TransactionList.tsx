@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from 'next/image';
-import React, { ReactNode } from 'react';
+import React from 'react';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 
 interface ITransactionList {
