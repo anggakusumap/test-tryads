@@ -4,7 +4,7 @@ import React from 'react';
 import styles from "../organisms/MainContent.module.css";
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import Image from 'next/image';
-import { Avatar } from '@/constants';
+import { Chart, Money } from '@/constants';
 import { FaArrowCircleUp } from 'react-icons/fa';
 import { Bar } from 'react-chartjs-2';
 import {
@@ -70,12 +70,12 @@ const CardBalance = () => {
                 <div className={ styles.cardBalanceFirstContent }>
                     <h1>$564</h1>
                     <div className={ styles.yourTotalBalance }>
-                        <Image src={ Avatar } alt='balance' width={ 30 } height={ 30 } />
+                        <Image src={ Money } alt='balance' width={ 80 } height={ 80 } />
                         <p>Your total balance</p>
                     </div>
                     <hr />
                     <div className={ styles.yourEarnings }>
-                        <Image src={ Avatar } alt='balance' width={ 30 } height={ 30 } />
+                        <Image src={ Chart } alt='balance' width={ 110 } height={ 30 } />
                         <div>
                             <FaArrowCircleUp />
                             <p>6%</p>

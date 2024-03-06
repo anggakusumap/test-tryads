@@ -14,11 +14,11 @@ const ChatMessage = ({ message, img, className, type }: IChatMessage) => {
             { type === 'sender' ?
                 <>
                     <p >{ message }</p>
-                    <Image src={ img } alt='image' width={ 30 } height={ 30 } />
+                    <Image src={ img } alt='image' width={ 40 } height={ 40 } />
                 </>
                 :
                 <>
-                    <Image src={ img } alt='image' width={ 30 } height={ 30 } />
+                    <Image src={ img } alt='image' width={ 40 } height={ 40 } />
                     <p >{ message }</p>
                 </>
             }

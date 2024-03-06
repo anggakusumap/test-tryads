@@ -15,7 +15,7 @@ const TransactionList = ({ className, img, name, createdAt, transaction }: ITran
         <>
             <div className={ className } >
                 <div>
-                    <Image src={ img } alt='image' width={ 30 } height={ 30 } />
+                    <Image src={ img } alt='image' width={ 50 } height={ 50 } />
                     <div>
                         <h4>{ name }</h4>
                         <p>{ createdAt }</p>

@@ -1,20 +1,25 @@
 import Avatar from "@/public/img/man.png";
 import Woman from "@/public/img/woman.png";
 import Visa from "@/public/img/visa.png";
+import Money from "@/public/img/money.png";
+import Chart from "@/public/img/chart.png";
+import Card from "@/public/img/card.png";
+import Crown from "@/public/img/crown.png";
+import Coin from "@/public/img/coin.png";
 
 export const latestSpendingData = [
   {
-    img: Avatar,
+    img: Coin,
     title: "Online store",
     createdAt: "May 30, 2023 at 08.00 pm",
   },
   {
-    img: Avatar,
+    img: Coin,
     title: "Pay the hospital",
     createdAt: "May 28, 2023 at 10.00 pm",
   },
   {
-    img: Avatar,
+    img: Coin,
     title: "Tickets",
     createdAt: "May 10, 2023 at 12.00 pm",
   },
@@ -78,4 +83,4 @@ export const transactionList = [
   },
 ];
 
-export { Avatar, Visa };
+export { Avatar, Visa, Money, Chart, Card, Crown };

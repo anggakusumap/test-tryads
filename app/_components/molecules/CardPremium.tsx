@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "../organisms/Aside.module.css";
 import Image from 'next/image';
-import { Avatar } from '@/constants';
+import { Crown } from '@/constants';
 import Button from '../atoms/Button';
 
 const CardPremium = () => {
@@ -11,7 +11,7 @@ const CardPremium = () => {
                 <p className={ styles.fontMedium }>Go to premium</p>
             </div>
 
-            <Image src={ Avatar } alt="premium" width={ 80 } height={ 80 } />
+            <Image src={ Crown } alt="premium" width={ 120 } height={ 80 } />
 
             <div>
                 <h4>Need more features?</h4>
