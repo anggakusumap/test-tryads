@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react';
 interface ITextButton {
   children: ReactNode;
   onClick?: () => void;
-  className: string;
+  className?: string;
 }
 
 const TextButton = ({ children, onClick, className }: ITextButton) => {

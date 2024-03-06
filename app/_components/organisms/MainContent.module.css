@@ -225,6 +225,7 @@
 .cardChat {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 20px;
     width: 50%;
     padding: 10px;
@@ -269,6 +270,10 @@
     justify-content: space-between;
 }
 
+.addShopping span {
+    font-weight: 600;
+}
+
 .messageSender {
     display: flex;
     justify-content: flex-end;
@@ -299,6 +304,40 @@
 .chatInput {
     background-color: var(--fourth-color);
     padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.addItem {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 600;
+}
+
+.addItem:hover {
+    color: var(--third-color);
+    cursor: pointer;
+}
+
+.inputItem {
+    display: flex;
+    gap: 10px;
+}
+
+.inputItem input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.inputItemButton {
+    border: none;
+    background-color: var(--primary-color);
+    padding: 10px;
     border-radius: 10px;
 }
 

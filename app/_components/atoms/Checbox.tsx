@@ -3,14 +3,15 @@ import { BsThreeDotsVertical } from 'react-icons/bs';
 
 interface ICheckbox {
     children: ReactNode;
-    onClick?: () => void;
+    onChange?: () => void;
     className: string;
+    isActive: boolean;
 }
 
-const Checkbox = ({ children, onClick, className }: ICheckbox) => {
+const Checkbox = ({ children, onChange, className, isActive }: ICheckbox) => {
     return (
-        <div className={ className } onClick={ onClick }>
-            <input type='checkbox' />
+        <div className={ className }>
+            <input type='checkbox' checked={ isActive } onChange={ onChange } />
             <label >{ children }</label>
             <BsThreeDotsVertical />
         </div>

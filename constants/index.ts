@@ -39,18 +39,22 @@ export const shoppingListItem = [
   {
     id: 1,
     title: "Macbook",
+    active: true,
   },
   {
     id: 2,
     title: "Bicycle",
+    active: false,
   },
   {
     id: 3,
     title: "Motorcycle",
+    active: false,
   },
   {
     id: 4,
     title: "Iphone 14 pro max",
+    active: true,
   },
 ];
 

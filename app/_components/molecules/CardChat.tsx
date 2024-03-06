@@ -29,8 +29,8 @@ const CardChat = () => {
 
     return (
         <div className={ styles.cardChat }>
-            <h3>Esther Howard</h3>
             <div className={ styles.chatContainer }>
+                <h3>Esther Howard</h3>
                 { messages.map((list) => (
                     <ChatMessage
                         key={ list.id }
