@@ -346,6 +346,11 @@
     border-radius: 10px;
 }
 
+.inputItemButton:hover {
+    background-color: var(--third-color);
+    cursor: pointer;
+}
+
 .chatContainer {
     display: flex;
     flex-direction: column;
