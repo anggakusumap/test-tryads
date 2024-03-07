@@ -497,6 +497,19 @@
     .doughnut {
         max-height: 40vh;
     }
+
+    .yourTotalBalance {
+        justify-content: center;
+    }
+
+    .yourTotalBalance p {
+        font-size: medium;
+        font-weight: 500;
+    }
+
+    .cardBalanceFirstContent>p {
+        font-size: small;
+    }
 }
 
 @media screen and (min-width: 1367px) {
