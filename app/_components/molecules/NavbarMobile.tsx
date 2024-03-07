@@ -8,7 +8,7 @@ import { Avatar } from '@/constants';
 const NavbarMobile = () => {
     return (
         <nav className={ styles.navbarMobile }>
-            <h1>S.</h1>
+            <h1>A.</h1>
 
             <div className={ styles.secondSectionMobile }>
                 <FaHome className={ styles.isActive } />

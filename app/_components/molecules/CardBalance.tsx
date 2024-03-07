@@ -46,12 +46,12 @@ const data = {
         {
             label: 'Balance',
             data: labels.map(() => faker.number.int({ min: 20, max: 60 })),
-            backgroundColor: '#545DDC',
+            backgroundColor: '#A39080',
         },
         {
             label: 'Earnings',
             data: labels.map(() => faker.number.int({ min: 20, max: 60 })),
-            backgroundColor: '#C8CBFD',
+            backgroundColor: '#D8A590',
         },
     ],
 };

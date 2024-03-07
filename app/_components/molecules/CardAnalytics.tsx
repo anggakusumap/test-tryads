@@ -31,15 +31,15 @@ const dataCircle = {
         {
             data: [ 30, 30, 20, 10 ],
             backgroundColor: [
-                '#515BEA',
-                '#FEA50F',
-                '#DB694E',
+                '#292522',
+                '#A39080',
+                '#EFD9B4',
                 '#F1F2F3'
             ],
             borderColor: [
-                '#515BEA',
-                '#FEA50F',
-                '#DB694E',
+                '#292522',
+                '#A39080',
+                '#EFD9B4',
                 '#F1F2F3'
             ],
             borderWidth: 1,

@@ -7,7 +7,7 @@ const CardVisa = () => {
     return (
         <div className={ styles.cardVisa }>
             <div className={ styles.cardVisaTitle }>
-                <h2>S.</h2>
+                <h2>A.</h2>
                 <Image src={ Visa } alt='visa' width={ 50 } height={ 50 } />
             </div>
             <div className={ styles.visaPic }>

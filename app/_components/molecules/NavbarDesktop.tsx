@@ -13,7 +13,7 @@ const NavbarDesktop = () => {
             </div>
             <nav className={ styles.navbarDesktop }>
                 <div className={ styles.firstSection }>
-                    <h1>S.</h1>
+                    <h1>A.</h1>
                     <div className={ styles.circleMessage }><FaMessage /></div>
                 </div>
 
