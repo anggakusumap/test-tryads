@@ -35,7 +35,7 @@ const MainContent = () => {
         <main className={ styles.mainContent }>
             <section className={ styles.mainTop }>
                 <div className={ styles.mainPeople }>
-                    <h1>Hello, Jhon D</h1>
+                    <h1>Hello, Angga Kusuma</h1>
                     <p>View and control your finance here!</p>
                 </div>
                 <Search className={ styles.mainSearch } />

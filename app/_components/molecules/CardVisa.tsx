@@ -16,7 +16,7 @@ const CardVisa = () => {
             <div className={ styles.cardVisaNumber }>
                 <h4><sup>****</sup>9838</h4>
                 <div>
-                    <p>Jhon Demon</p>
+                    <p>Angga Kusuma</p>
                     <p>08/12</p>
                 </div>
             </div>
